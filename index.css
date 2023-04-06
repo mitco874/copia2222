@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+}
+
+.submit-btn{
+        width: 130px;
+        display: flex;
+        align-self: flex-end;
+}

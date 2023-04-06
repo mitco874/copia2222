@@ -2,7 +2,8 @@ import { createContext } from 'react';
 import { Employee, vaccinatedState, vaccineType } from '../../interfaces';
 
 interface ContextProps{
-    employees: Employee[];
+    totalEmployees: Employee[];
+    filteredEmployees: Employee[];
     loadEmployees: () => Promise<void>;
     removeEmployee: (employeeId: number) => Promise<void>;
     updateEmployee: (employeeId: number, updateEmployeeBody: any) => Promise<void>;   

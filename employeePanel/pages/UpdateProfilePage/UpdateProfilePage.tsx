@@ -38,7 +38,7 @@ export const UpdateProfilePage = () => {
     birthdate: dayjs(user.birthDate),
     address: user.address,
     phone: user.phone,
-    vaccinated: user.vaccinatedState,
+    vaccinated: user.vaccinatedState as boolean,
   } : {
     birthdate: null,
     address: "",
@@ -52,11 +52,6 @@ export const UpdateProfilePage = () => {
 
   const { register, handleSubmit, formState: { errors }, setValue, } = useForm<FormData>({ defaultValues: initialFormValues });
   const [hasUpdateError, setHasUpdateError] = useState<boolean>(false);
-
-
-  const [isRegisterVacModalOpen, setIsRegisterVacModal] = useState(false);
-  const handleOpenModal = () => setIsRegisterVacModal(true);
-  const handleCloseModal = () => setIsRegisterVacModal(false);
 
   const [showVaccinationForm, setShowVaccinationForm] = useState(false);
 

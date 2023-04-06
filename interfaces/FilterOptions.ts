@@ -1,4 +1,4 @@
 export interface FilterOptions {
-    value: string | number ;
+    value: string | number | boolean;
     name: string | boolean | number ;
 }

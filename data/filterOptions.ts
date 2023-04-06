@@ -2,15 +2,15 @@ import { FilterOptions } from "../interfaces"
 
 export const vaccineStatusFilterOptions: FilterOptions[] = [
     {
-        value: -1,
+        value: 'all',
         name: "All"
     },
     {
-        value: "true",
+        value: 0,
         name: "Vaccinated"
     },
     {
-        value: "false",
+        value: 1,
         name: "Not vaccinated"
     }
 ]

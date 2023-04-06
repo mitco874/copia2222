@@ -15,7 +15,7 @@ interface FilterData {
 }
 
 const initialValues: FilterData={
-    vaccinationState: -1,
+    vaccinationState: "all",
     vaccineType: -1,
     startDate: "",
     endDate: ""

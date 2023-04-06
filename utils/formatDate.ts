@@ -11,3 +11,11 @@ export const dayMonthYearToYearMonthDay = ( date: string ): string =>{
     }
     return `${ date.substring(6) }-${ date.substring(3,5) }-${ date.substring(0,2) }`
 }
+
+export const toMs = (dateStr: string): number => {
+    let parts: string[] = dateStr.split("-");
+    return new Date( Number(parts[2]), Number(parts[1]) - 1, Number(parts[0])).getTime()
+  }
+
+
+
